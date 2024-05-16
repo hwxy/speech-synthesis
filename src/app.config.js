@@ -1,11 +1,12 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
-    "pages/personalinformation/index"
+    "pages/personalinformation/index",
+    "pages/voice/index",
   ],
   tabBar: {
     "selectedColor": "#6190e8",
-    "color": "#6a6a77",
+    "color": "#666",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -25,7 +26,6 @@ export default defineAppConfig({
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: '配音专家',
-    navigationBarTextStyle: 'black',
-    backgroundColor: "#fafbfc"
+    navigationBarTextStyle: 'black'
   }
 })

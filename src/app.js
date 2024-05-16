@@ -1,6 +1,10 @@
 
-import { useLaunch } from '@tarojs/taro'
-import './app.scss'
+import { useLaunch } from '@tarojs/taro';
+import { Provider } from 'react-redux';
+import configStore from './redux';
+import './app.scss';
+
+const store = configStore()
 
 function App({ children }) {
 
@@ -9,7 +13,9 @@ function App({ children }) {
   })
 
   // children 是将要会渲染的页面
-  return children
+  return (
+    <Provider store={store}>{children}</Provider>
+  )
 }
 
 export default App

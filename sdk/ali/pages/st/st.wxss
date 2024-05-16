@@ -1,4 +1,0 @@
-/* pages/st/st.wxss */
-.stResult {
-    word-break:break-all;
-}

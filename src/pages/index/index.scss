@@ -1,1 +1,194 @@
 @import "~taro-ui/dist/style/components/flex.scss";
+
+$preCls: "homepage";
+
+.#{$preCls} {
+  padding: 0px 20px;
+  &__tip {
+    margin-bottom: 20px;
+  }
+  &__textarea {
+    position: relative;
+    .textarea {
+      color: #666;
+      padding-bottom: 56px;
+      .at-textarea__counter {
+        color:  #666 !important;
+      }
+    }
+    .textarea__controls {
+      position: absolute;
+      font-size: 28px;
+      color: #C9C9C9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      bottom: 10px;
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+      .controls-btns {
+      }
+      .controls__item {
+        margin: 0px 8px;
+      }
+      .controls-words-number {
+        display: flex;
+      }
+    }
+  }
+
+  &__debug {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .debug__item {
+      width: 20%;
+      padding: 0px 8px;
+      margin-top: 20px; 
+      color: #666;
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .item__volume {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/volume.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__rate {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/speakingSpeed.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__break {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/pause.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__soundEvent {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/soundEffects.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__bgm {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/backgroundSound.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__backgroundMusicVolume {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/volume.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__encodeType {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/formatSetting.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__voice {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/female-broadcast.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+
+    .item__man {
+      background: url('../../assets/male-broadcast.png') no-repeat center/ 100%;
+    }
+
+    .item__pitch {
+      width: 40px;
+      height: 40px;
+      background: url('../../assets/tone.png') no-repeat center/ 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__main-controls {
+    margin-top: 30px;
+    display: flex;
+    .main-controls__btn {
+      width: 300px;
+    }
+  }
+
+  &__function-set {
+    display: flex;
+    color: #666;
+    .function-text {
+      width: 110px;
+      display: inline-block;
+      padding-top: 20px;
+    }
+    .function-content {
+      width: 590px;
+      display: inline-block;
+    }
+    .function-number {
+      padding-top: 20px;
+    }
+    .content-tags {
+      margin-left: -10px;
+    }
+    .content__tag {
+      margin: 10px 6px;
+    }
+    slider {
+      margin-left: 0px !important;
+    }
+  }
+
+  &__floatlayout {
+    .at-float-layout__container {
+      min-height: 0px !important;
+    }
+    .layout-header__title {
+      color: #666;
+    }
+    .layout-header__btn-close::after {
+      color: #666 !important;
+    }
+    .layout-header__btn-close::before {
+      color: #666 !important;
+    }
+
+    .layout-body { 
+      min-height: 0px !important;
+      padding: 24px 18px 36px 18px;
+    }
+
+    .layout-body__content {
+      min-height: 0px !important;
+    }
+
+  }
+
+  .floatlayout__footer {
+    margin-top: 40px;
+    display: flex;
+    .footer__btn-confirm {
+      width: 300px;
+    }
+    .footer__btn-cancel {
+      width: 300px;
+    }
+  }
+}
